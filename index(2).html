@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aanchal Gupta is a Staff Product Manager at Walmart who builds trusted AI products at enterprise scale and independently from 0 to 1.">
+  <meta name="theme-color" content="#f8f4ed">
+  <title>Aanchal Gupta — AI Product Leader & Builder</title>
+  <style>
+    :root {
+      --ink: #17211c;
+      --ink-2: #33423a;
+      --muted: #68746d;
+      --paper: #fffdf9;
+      --paper-2: #f6f1e8;
+      --forest: #173f31;
+      --forest-2: #255b46;
+      --orange: #e66a2c;
+      --orange-dark: #bf4f18;
+      --line: #ddd8cf;
+      --sage: #dfeae3;
+      --white: #ffffff;
+      --shadow: 0 18px 55px rgba(23, 33, 28, 0.10);
+      --radius: 22px;
+      --max: 1240px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid rgba(230, 106, 44, .42); outline-offset: 3px; }
+
+    .shell { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+    .skip-link {
+      position: fixed; left: 16px; top: -70px; z-index: 999;
+      background: var(--ink); color: #fff; padding: 10px 14px; border-radius: 9px;
+      transition: top .2s ease;
+    }
+    .skip-link:focus { top: 16px; }
+
+    .nav-wrap {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255, 253, 249, .88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(221, 216, 207, .82);
+    }
+    nav {
+      min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .brand { text-decoration: none; font-family: Georgia, serif; font-size: 21px; letter-spacing: -.3px; }
+    .brand span { color: var(--orange); }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { text-decoration: none; color: var(--muted); font-size: 14px; font-weight: 650; }
+    .nav-links a:hover { color: var(--orange-dark); }
+    .nav-cta {
+      color: #fff !important; background: var(--forest); padding: 9px 14px; border-radius: 999px;
+    }
+    .nav-cta:hover { background: var(--forest-2); }
+
+    .hero {
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 82% 16%, rgba(230, 106, 44, .15), transparent 25%),
+        radial-gradient(circle at 8% 80%, rgba(37, 91, 70, .12), transparent 30%),
+        linear-gradient(155deg, #fbf5ed 0%, #fffdf9 58%, #f0f5f1 100%);
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-grid {
+      min-height: 548px; padding: 52px 0 42px;
+      display: grid; grid-template-columns: 1.5fr .72fr; gap: 56px; align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px;
+      color: var(--orange-dark); font-size: 12px; font-weight: 800;
+      letter-spacing: .15em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 26px; height: 2px; background: var(--orange); }
+    h1, h2, h3 { margin-top: 0; }
+    h1 {
+      max-width: 850px; margin: 16px 0 18px;
+      font-family: Georgia, serif; font-size: clamp(44px, 4.7vw, 66px); line-height: 1.02;
+      letter-spacing: -1.9px; font-weight: 400;
+    }
+    .hero-copy { max-width: 790px; margin: 0; color: var(--ink-2); font-size: clamp(17px, 1.45vw, 19px); line-height: 1.55; }
+    .hero-copy strong { color: var(--ink); }
+    .actions { margin-top: 24px; display: grid; gap: 14px; }
+    .primary-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .contact-actions {
+      display: flex; align-items: center; flex-wrap: wrap; gap: 10px 18px;
+      min-height: 28px;
+    }
+    .contact-label {
+      color: var(--muted); font-size: 12px; font-weight: 800;
+      letter-spacing: .11em; text-transform: uppercase;
+    }
+    .contact-divider { width: 1px; height: 18px; background: var(--line); }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      min-height: 44px; padding: 10px 17px; border-radius: 999px;
+      text-decoration: none; font-weight: 750; font-size: 14px;
+      border: 1px solid transparent; transition: transform .18s ease, background .18s ease, border-color .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); }
+    .button-primary { background: var(--orange); color: #fff; }
+    .button-primary:hover { background: var(--orange-dark); }
+    .button-secondary { border-color: #bcb8b0; background: rgba(255,255,255,.55); }
+    .button-secondary:hover { border-color: var(--ink); background: #fff; }
+    .text-link { color: var(--forest-2); font-weight: 750; text-underline-offset: 4px; }
+
+    .portrait-card {
+      position: relative; width: min(100%, 350px); justify-self: end; padding: 14px; border-radius: 28px;
+      background: rgba(255, 255, 255, .70); border: 1px solid rgba(255,255,255,.8);
+      box-shadow: var(--shadow); transform: rotate(1.5deg);
+    }
+    .portrait-card::after {
+      content: "Builder PM"; position: absolute; right: -17px; bottom: 28px;
+      background: var(--forest); color: #fff; padding: 9px 14px; border-radius: 999px;
+      font-size: 12px; font-weight: 800; letter-spacing: .05em;
+      box-shadow: 0 10px 26px rgba(23,63,49,.24); transform: rotate(-4deg);
+    }
+    .portrait { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 21px; }
+    .portrait-note { padding: 11px 6px 3px; color: var(--muted); font-size: 12.5px; line-height: 1.45; }
+    .portrait-note strong { color: var(--ink); display: block; font-size: 15px; }
+
+    .proof-strip { border-top: 1px solid rgba(221,216,207,.8); }
+    .proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .proof-item { padding: 17px 24px; border-right: 1px solid var(--line); }
+    .proof-item:first-child { padding-left: 0; }
+    .proof-item:last-child { border-right: 0; }
+    .proof-number { display: block; font-family: Georgia, serif; font-size: 24px; line-height: 1.1; }
+    .proof-label { color: var(--muted); font-size: 12px; margin-top: 5px; }
+
+    section { padding: 96px 0; }
+    .section-kicker { color: var(--orange-dark); font-size: 12px; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
+    .section-head { max-width: 760px; margin-bottom: 42px; }
+    .section-head h2 {
+      margin: 12px 0 16px; font-family: Georgia, serif; font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.12; letter-spacing: -1.3px; font-weight: 400;
+    }
+    .section-head p { margin: 0; color: var(--muted); font-size: 18px; }
+
+    .operating-section { padding-bottom: 78px; }
+    .thesis-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .thesis-card { min-height: 252px; padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+    .thesis-number { color: var(--orange); font-weight: 900; font-size: 12px; letter-spacing: .06em; }
+    .thesis-card h3 { margin: 34px 0 10px; font-family: Georgia, serif; font-size: 23px; font-weight: 400; line-height: 1.18; }
+    .thesis-card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .bridge-card {
+      margin-top: 22px; padding: 25px 28px; display: grid; grid-template-columns: .58fr 1.42fr; gap: 30px;
+      align-items: center; border-radius: var(--radius); background: var(--paper-2); border: 1px solid var(--line);
+    }
+    .bridge-label { color: var(--orange-dark); font-size: 12px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+    .bridge-card p { margin: 0; color: var(--ink-2); font-size: 16px; }
+    .bridge-card strong { color: var(--ink); }
+
+    .nouri-section { background: var(--forest); color: #fff; }
+    .nouri-section .section-kicker { color: #ffb087; }
+    .nouri-section .section-head p { color: rgba(255,255,255,.72); }
+    .nouri-card { overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-radius: 30px; background: rgba(255,255,255,.06); box-shadow: 0 22px 70px rgba(0,0,0,.18); }
+    .nouri-top { padding: 36px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 34px; border-bottom: 1px solid rgba(255,255,255,.12); }
+    .nouri-brand { display: flex; gap: 17px; align-items: center; }
+    .nouri-logo { width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; background: var(--orange); font-family: Georgia, serif; font-size: 30px; font-weight: 700; }
+    .nouri-brand h3 { margin: 0 0 4px; font-family: Georgia, serif; font-size: 31px; font-weight: 400; }
+    .nouri-brand p { margin: 0; color: rgba(255,255,255,.68); font-size: 14px; }
+    .beta-box { align-self: center; padding: 17px 19px; border-radius: 16px; background: rgba(255,255,255,.08); }
+    .beta-label { color: #ffb087; font-size: 11px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+    .beta-code-row { display: flex; align-items: center; gap: 10px; margin-top: 6px; flex-wrap: wrap; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .beta-code { font-size: 18px; color: #fff; }
+    .copy-button { border: 1px solid rgba(255,255,255,.22); background: transparent; color: #fff; border-radius: 999px; padding: 7px 11px; cursor: pointer; font: inherit; font-size: 12px; font-weight: 750; }
+    .copy-button:hover { background: rgba(255,255,255,.1); }
+
+    .nouri-body { padding: 36px; }
+    .overview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .overview-block { padding-right: 22px; border-right: 1px solid rgba(255,255,255,.12); }
+    .overview-block:last-child { border-right: 0; }
+    .small-label { color: #ffb087; font-size: 11px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+    .overview-block p { margin: 9px 0 0; color: rgba(255,255,255,.84); font-size: 14px; }
+
+    .flow { margin: 35px 0; padding: 26px; border-radius: 20px; background: rgba(0,0,0,.14); }
+    .flow-intro { display: grid; grid-template-columns: .5fr 1.5fr; gap: 24px; align-items: start; margin-bottom: 20px; }
+    .flow-title { color: #ffb087; font-size: 12px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+    .flow-intro p { margin: 0; color: rgba(255,255,255,.76); font-size: 14px; }
+    .flow-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 11px; align-items: stretch; }
+    .flow-step { min-height: 112px; padding: 16px; border: 1px solid rgba(255,255,255,.13); border-radius: 15px; background: rgba(255,255,255,.07); }
+    .flow-index { display: block; color: #ffb087; font-size: 10px; font-weight: 900; letter-spacing: .12em; }
+    .flow-step strong { display: block; margin: 12px 0 4px; color: #fff; font-size: 14px; }
+    .flow-step small { display: block; color: rgba(255,255,255,.67); font-size: 12px; line-height: 1.45; }
+
+    .reliability-block { margin: 0 0 30px; }
+    .subsection-head { display: grid; grid-template-columns: .5fr 1.5fr; gap: 24px; align-items: end; margin-bottom: 16px; }
+    .subsection-head h3 { margin: 0; font-family: Georgia, serif; font-size: 27px; font-weight: 400; line-height: 1.18; }
+    .reliability-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .reliability-item { padding: 18px; border-radius: 16px; border: 1px solid rgba(255,255,255,.13); background: rgba(255,255,255,.07); }
+    .reliability-item strong { display: block; margin-bottom: 7px; color: #fff; font-size: 14px; }
+    .reliability-item p { margin: 0; color: rgba(255,255,255,.67); font-size: 12px; line-height: 1.5; }
+
+    .next-panel {
+      margin-top: 22px; padding: 22px 24px; display: grid; grid-template-columns: .85fr 1.15fr; gap: 26px;
+      border-radius: 18px; border: 1px solid rgba(255,255,255,.13); background: rgba(0,0,0,.13);
+    }
+    .next-panel h4 { margin: 7px 0 0; font-family: Georgia, serif; font-size: 22px; font-weight: 400; line-height: 1.2; }
+    .next-panel ul { margin: 0; padding-left: 20px; color: rgba(255,255,255,.75); font-size: 13px; }
+    .next-panel li + li { margin-top: 7px; }
+
+    .decision-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .decision { padding: 23px; border-radius: 19px; background: #fff; color: var(--ink); }
+    .decision h4 { margin: 17px 0 8px; font-size: 17px; line-height: 1.3; }
+    .decision p { margin: 0; color: var(--muted); font-size: 14px; }
+    .decision-tag { display: inline-flex; padding: 5px 9px; border-radius: 999px; background: var(--paper-2); color: var(--orange-dark); font-size: 11px; font-weight: 850; }
+    .nouri-footer { margin-top: 26px; display: flex; justify-content: space-between; gap: 20px; align-items: center; flex-wrap: wrap; }
+    .nouri-footer p { margin: 0; color: rgba(255,255,255,.65); font-size: 13px; max-width: 650px; }
+    .nouri-link { background: var(--orange); color: #fff; }
+
+    .case-stack { display: grid; gap: 20px; }
+    .case-card { display: grid; grid-template-columns: 235px 1fr; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; }
+    .case-impact { padding: 30px; background: var(--paper-2); display: flex; flex-direction: column; justify-content: space-between; }
+    .case-impact strong { font-family: Georgia, serif; font-size: 34px; line-height: 1.08; font-weight: 400; }
+    .case-impact span { color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .case-content { padding: 30px; }
+    .case-content h3 { margin: 0 0 10px; font-size: 21px; }
+    .case-content > p { margin: 0 0 18px; color: var(--muted); }
+    .scope-row {
+      margin: -15px 0 26px; padding: 15px 18px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+      border: 1px solid var(--line); border-radius: 15px; background: var(--paper-2); color: var(--muted); font-size: 13px;
+    }
+    .scope-row strong { color: var(--ink); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+    .case-logic { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
+    .case-logic div { border-top: 1px solid var(--line); padding-top: 13px; }
+    .case-logic b { display: block; margin-bottom: 5px; color: var(--orange-dark); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+    .case-logic p { margin: 0; color: var(--ink-2); font-size: 13px; }
+    .outcome-row { margin-top: 22px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; }
+    .outcome-chip { padding: 18px; border-radius: 17px; background: var(--sage); }
+    .outcome-chip strong { display: block; font-family: Georgia, serif; font-size: 24px; font-weight: 400; }
+    .outcome-chip span { color: var(--muted); font-size: 12px; }
+
+    .principles { background: var(--paper-2); }
+    .principle-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .principle-card { padding: 30px; border-radius: var(--radius); background: #fff; border: 1px solid var(--line); }
+    .principle-mark { font-family: Georgia, serif; color: var(--orange); font-size: 47px; line-height: .8; }
+    .principle-card h3 { margin: 22px 0 12px; font-family: Georgia, serif; font-weight: 400; font-size: 24px; line-height: 1.25; }
+    .principle-card p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .thinking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .thinking-card { padding: 27px; border-radius: var(--radius); border: 1px solid var(--line); background: #fff; }
+    .thinking-card h3 { margin: 12px 0 7px; font-family: Georgia, serif; font-size: 23px; font-weight: 400; }
+    .thinking-card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .thinking-card.wide { grid-column: span 2; display: flex; justify-content: space-between; align-items: center; gap: 24px; background: var(--forest); color: #fff; border-color: var(--forest); }
+    .thinking-card.wide h3 { margin-top: 0; }
+    .thinking-card.wide p { color: rgba(255,255,255,.68); }
+    .thinking-card.wide .button { flex-shrink: 0; background: #fff; color: var(--forest); }
+
+    .about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 54px; align-items: start; }
+    .about-copy h2 { font-family: Georgia, serif; font-size: clamp(34px, 5vw, 53px); font-weight: 400; line-height: 1.14; margin-bottom: 22px; }
+    .about-copy p { color: var(--ink-2); font-size: 17px; }
+    .about-copy p + p { margin-top: 16px; }
+    .credentials { display: grid; gap: 12px; }
+    .credential { padding: 18px 19px; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
+    .credential strong { display: block; font-size: 14px; }
+    .credential span { color: var(--muted); font-size: 12px; }
+
+    .contact { padding-top: 0; }
+    .contact-card {
+      padding: 54px; border-radius: 30px; color: #fff;
+      background:
+        radial-gradient(circle at 90% 15%, rgba(230,106,44,.5), transparent 28%),
+        linear-gradient(135deg, #142c22 0%, #235a44 100%);
+      box-shadow: var(--shadow);
+    }
+    .contact-card h2 { max-width: 760px; margin-bottom: 15px; font-family: Georgia, serif; font-weight: 400; font-size: clamp(35px, 5vw, 56px); line-height: 1.12; }
+    .contact-card p { max-width: 720px; margin: 0; color: rgba(255,255,255,.72); font-size: 17px; }
+    .contact-card .actions { margin-top: 28px; }
+    .contact-card .button-primary { background: #fff; color: var(--forest); }
+    .contact-card .button-secondary { color: #fff; border-color: rgba(255,255,255,.32); background: transparent; }
+
+    footer { padding: 34px 0 44px; color: var(--muted); font-size: 12px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .footer-links { display: flex; gap: 18px; }
+    .footer-links a { text-underline-offset: 3px; }
+
+
+    @media (min-width: 901px) and (max-width: 1120px) {
+      .hero-grid { grid-template-columns: 1.42fr .68fr; gap: 38px; }
+      h1 { font-size: clamp(43px, 5.3vw, 60px); }
+      .portrait-card { width: min(100%, 320px); }
+      .thesis-grid { grid-template-columns: repeat(2, 1fr); }
+      .thesis-card { min-height: 220px; }
+      .reliability-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid, .nouri-top, .about-grid { grid-template-columns: 1fr; }
+      .hero-grid { gap: 46px; min-height: unset; }
+      .portrait-card { max-width: 360px; }
+      .proof-grid { grid-template-columns: repeat(2, 1fr); }
+      .proof-item:nth-child(2) { border-right: 0; }
+      .proof-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .proof-item:nth-child(3) { padding-left: 0; }
+      .thesis-grid { grid-template-columns: repeat(2, 1fr); }
+      .decision-grid, .principle-grid { grid-template-columns: 1fr; }
+      .thesis-card { min-height: auto; }
+      .thesis-card h3 { margin-top: 24px; }
+      .bridge-card, .flow-intro, .subsection-head, .next-panel { grid-template-columns: 1fr; gap: 13px; }
+      .reliability-grid { grid-template-columns: repeat(2, 1fr); }
+      .overview-grid { grid-template-columns: 1fr; }
+      .overview-block { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); padding: 0 0 18px; }
+      .overview-block:last-child { border-bottom: 0; padding-bottom: 0; }
+      .flow-row { grid-template-columns: repeat(2, 1fr); }
+      .case-card { grid-template-columns: 1fr; }
+      .case-impact { min-height: 160px; }
+      .case-logic { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 680px) {
+      .shell { width: min(calc(100% - 28px), var(--max)); }
+      nav { gap: 10px; }
+      .brand { font-size: 19px; }
+      .nav-links { gap: 10px; }
+      .nav-links a { font-size: 12px; }
+      .nav-cta { padding: 8px 11px; }
+      .hero-grid { padding-top: 70px; }
+      .actions { gap: 15px; }
+      .contact-actions { gap: 9px 14px; }
+      h1 { letter-spacing: -1.5px; }
+      section { padding: 76px 0; }
+      .proof-item { padding: 20px 15px; }
+      .proof-number { font-size: 23px; }
+      .nouri-top, .nouri-body, .case-impact, .case-content { padding: 23px; }
+      .thesis-grid, .flow-row, .reliability-grid, .outcome-row, .thinking-grid { grid-template-columns: 1fr; }
+      .bridge-card { padding: 22px; }
+      .thinking-card.wide { grid-column: span 1; display: block; }
+      .thinking-card.wide .button { margin-top: 20px; }
+      .contact-card { padding: 34px 25px; }
+    }
+
+    @media (max-width: 430px) {
+      .shell { width: min(calc(100% - 20px), var(--max)); }
+      nav { min-height: 64px; }
+      .brand { font-size: 17px; }
+      .nav-links { gap: 7px; }
+      .nav-links a { font-size: 10.5px; }
+      .nav-cta { padding: 7px 9px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+    }
+
+    @media print {
+      .nav-wrap, .actions, .copy-button { display: none !important; }
+      .hero-grid { min-height: 0; }
+      section { padding: 40px 0; }
+      .nouri-section, .contact-card { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .case-card, .thesis-card, .principle-card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="nav-wrap">
+    <nav class="shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Aanchal Gupta home">Aanchal Gupta<span>.</span></a>
+      <div class="nav-links" aria-label="External links">
+        <a href="mailto:aanchalbuilds@gmail.com" aria-label="Email Aanchal Gupta">Email</a>
+        <a href="https://www.linkedin.com/in/anchal-gupta/" target="_blank" rel="noopener noreferrer" aria-label="Open Aanchal Gupta's LinkedIn profile">LinkedIn ↗</a>
+        <a class="nav-cta" href="https://nouriscan.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the live NouriScan product">Try NouriScan ↗</a>
+      </div>
+    </nav>
+  </div>
+
+  <main id="main">
+    <header class="hero" id="top">
+      <div class="shell hero-grid">
+        <div>
+          <div class="eyebrow">Staff Product Manager at Walmart · San Francisco Bay Area</div>
+          <h1>I turn AI potential into trusted products people adopt.</h1>
+          <p class="hero-copy">
+            At Walmart, I lead AI/ML products and decisioning capabilities used by <strong>hundreds of thousands of drivers</strong>. Independently, I took <strong>NouriScan</strong>—a personalized consumer AI product—from idea to production in two weeks.
+          </p>
+          <div class="actions" aria-label="Portfolio and contact links">
+            <div class="primary-actions">
+              <a class="button button-primary" href="https://nouriscan.app/" target="_blank" rel="noopener noreferrer">Try NouriScan ↗</a>
+              <a class="button button-secondary" href="#nouriscan">View the case study <span aria-hidden="true">↓</span></a>
+              <a class="button button-secondary" href="#enterprise">See enterprise work</a>
+            </div>
+          </div>
+        </div>
+        <aside class="portrait-card" aria-label="Aanchal Gupta profile">
+          <img class="portrait" src="data:image/jpeg;base64,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" alt="Aanchal Gupta">
+          <div class="portrait-note">
+            <strong>Enterprise scale. Hands-on build.</strong>
+            Product strategy, AI system design, evaluation, adoption, and launch.
+          </div>
+        </aside>
+      </div>
+      <div class="proof-strip">
+        <div class="shell proof-grid" aria-label="Selected outcomes">
+          <div class="proof-item"><span class="proof-number">$100M+</span><div class="proof-label">GMV protected with AI</div></div>
+          <div class="proof-item"><span class="proof-number">+40%</span><div class="proof-label">GenAI feature adoption</div></div>
+          <div class="proof-item"><span class="proof-number">$58M</span><div class="proof-label">Annual ML decisioning savings</div></div>
+          <div class="proof-item"><span class="proof-number">2 weeks</span><div class="proof-label">Idea to production for NouriScan</div></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="operating-section" aria-labelledby="why-title">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-kicker">How I operate at scale</div>
+          <h2 id="why-title">I turn ambiguous AI opportunities into durable product systems.</h2>
+          <p>At Principal scope, the work is not only launching a model. It is setting direction, creating reusable capabilities, aligning the organization, and building the mechanisms that make performance and trust sustainable.</p>
+        </div>
+        <div class="thesis-grid">
+          <article class="thesis-card">
+            <div class="thesis-number">01 / DIRECTION</div>
+            <h3>Shape strategy across ambiguity</h3>
+            <p>I connect user needs, business outcomes, model capability, and operational constraints into a clear multi-year product direction.</p>
+          </article>
+          <article class="thesis-card">
+            <div class="thesis-number">02 / SYSTEMS</div>
+            <h3>Build reusable capabilities</h3>
+            <p>I look beyond point solutions—turning fragmented rules and workflows into decisioning, data, and platform capabilities that compound.</p>
+          </article>
+          <article class="thesis-card">
+            <div class="thesis-number">03 / ALIGNMENT</div>
+            <h3>Align teams around outcomes</h3>
+            <p>I bring Engineering, Data Science, Design, Operations, and Business partners together around shared goals, tradeoffs, and guardrails.</p>
+          </article>
+          <article class="thesis-card">
+            <div class="thesis-number">04 / MEASUREMENT</div>
+            <h3>Make trust operational</h3>
+            <p>I define instrumentation, experiments, rollout criteria, monitoring, and failure behavior before scaling a high-impact AI system.</p>
+          </article>
+        </div>
+        <div class="bridge-card">
+          <div class="bridge-label">One product philosophy · Two operating environments</div>
+          <p><strong>At Walmart,</strong> I learned how AI behaves under scale, operational constraints, and uneven data quality. <strong>Building NouriScan</strong> let me apply those lessons directly: narrow the problem, ground the model, design failure behavior, instrument trust, and ship quickly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="nouri-section" id="nouriscan" aria-labelledby="nouri-title">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-kicker">Independent product · Built solo</div>
+          <h2 id="nouri-title">From a grocery-aisle problem to a production AI product in two weeks.</h2>
+          <p>NouriScan helps parents understand whether a packaged food fits their child's age, allergies, dietary needs, and health goals.</p>
+        </div>
+
+        <article class="nouri-card">
+          <div class="nouri-top">
+            <div class="nouri-brand">
+              <div class="nouri-logo" aria-hidden="true">N</div>
+              <div>
+                <h3>NouriScan</h3>
+                <p>Personalized nutrition and ingredient-safety guidance for parents.</p>
+              </div>
+            </div>
+            <div class="beta-box">
+              <div class="beta-label">Private beta invite code</div>
+              <div class="beta-code-row">
+                <code class="beta-code" id="invite-code">NOURI-BETA</code>
+                <button class="copy-button" type="button" id="copy-code">Copy code</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="nouri-body">
+            <div class="overview-grid">
+              <div class="overview-block">
+                <div class="small-label">The user problem</div>
+                <p>Food labels provide data, but parents still have to translate that data into a decision for a specific child.</p>
+              </div>
+              <div class="overview-block">
+                <div class="small-label">My role</div>
+                <p>Product strategy, UX, agentic workflow, RAG, prompt design, evaluations, confidence behavior, and production launch.</p>
+              </div>
+              <div class="overview-block">
+                <div class="small-label">The trust boundary</div>
+                <p>NouriScan informs a parent's decision. It does not diagnose, prescribe, or pretend certainty when evidence is sparse.</p>
+              </div>
+            </div>
+
+            <div class="flow" aria-label="NouriScan multi-step AI product flow">
+              <div class="flow-intro">
+                <div class="flow-title">How the product is agentic</div>
+                <p>NouriScan does not rely on one prompt. It coordinates a multi-step workflow that structures the label, retrieves grounded evidence, evaluates it against a child profile, checks confidence and safety, and decides whether to answer, clarify, or safely stop.</p>
+              </div>
+              <div class="flow-row">
+                <div class="flow-step"><span class="flow-index">01</span><strong>Capture</strong><small>Food label or product context plus the child's profile.</small></div>
+                <div class="flow-step"><span class="flow-index">02</span><strong>Structure</strong><small>Extract and normalize ingredients and nutrition information.</small></div>
+                <div class="flow-step"><span class="flow-index">03</span><strong>Ground</strong><small>Retrieve relevant evidence from trusted USDA and AAP guidance.</small></div>
+                <div class="flow-step"><span class="flow-index">04</span><strong>Evaluate</strong><small>Compare the product with age, allergies, diet, and health goals.</small></div>
+                <div class="flow-step"><span class="flow-index">05</span><strong>Guard</strong><small>Apply confidence, safety, and clarification checks before responding.</small></div>
+                <div class="flow-step"><span class="flow-index">06</span><strong>Explain</strong><small>Return a score, flags, and rationale—or an explicit safe fallback.</small></div>
+              </div>
+            </div>
+
+            <div class="reliability-block">
+              <div class="subsection-head">
+                <div class="small-label">Reliability by design</div>
+                <h3>Trust is implemented as product behavior—not a disclaimer.</h3>
+              </div>
+              <div class="reliability-grid">
+                <article class="reliability-item"><strong>Grounding over model memory</strong><p>Retrieval anchors recommendations in trusted nutrition and pediatric guidance.</p></article>
+                <article class="reliability-item"><strong>Golden-dataset evaluation</strong><p>Representative label scenarios expose weak reasoning before scope expands.</p></article>
+                <article class="reliability-item"><strong>Confidence-aware responses</strong><p>Low-confidence situations trigger clarification or an explicit “I don't know.”</p></article>
+                <article class="reliability-item"><strong>A narrow trust boundary</strong><p>The product informs a parent's decision; it does not diagnose or prescribe.</p></article>
+              </div>
+            </div>
+
+            <div class="decision-grid">
+              <article class="decision">
+                <span class="decision-tag">Product pivot</span>
+                <h4>Rebuilt NouriBot when fixed rules broke under real parent needs.</h4>
+                <p>Static suggestion paths could not adapt to the different questions parents asked after the same scan. I moved to contextual LLM-generated guidance with a narrower role and stronger guardrails.</p>
+              </article>
+              <article class="decision">
+                <span class="decision-tag">Trust design</span>
+                <h4>Made “I don't know” a first-class product behavior.</h4>
+                <p>Golden-dataset evaluations and confidence calibration exposed cases where a plausible response was more dangerous than no response. Sparse evidence now triggers an explicit limitation instead of false certainty.</p>
+              </article>
+              <article class="decision">
+                <span class="decision-tag">Scope discipline</span>
+                <h4>Held a retailer-link feature from MVP after inconsistent outputs.</h4>
+                <p>The feature worked often—but not reliably across retailers. I chose a narrower trustworthy launch over a broader experience that could erode parent confidence.</p>
+              </article>
+            </div>
+
+            <div class="next-panel">
+              <div>
+                <div class="small-label">Next maturity steps</div>
+                <h4>What I would validate before expanding the product boundary.</h4>
+              </div>
+              <ul>
+                <li>Expand evaluation coverage across allergens, ambiguous labels, and conflicting nutrition signals.</li>
+                <li>Add barcode scanning only after validating data completeness and fallback behavior.</li>
+                <li>Instrument clarification, correction, disagreement, and unsafe-answer rates as trust metrics.</li>
+              </ul>
+            </div>
+
+            <div class="nouri-footer">
+              <p>Built with Claude Code, a multi-step agentic workflow, RAG, prompt engineering, golden-dataset evaluation, confidence calibration, and explicit safe-failure behavior.</p>
+              <a class="button nouri-link" href="https://nouriscan.app/" target="_blank" rel="noopener noreferrer">Try NouriScan ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="enterprise" aria-labelledby="enterprise-title">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-kicker">Selected Walmart work</div>
+          <h2 id="enterprise-title">Decision-led AI product systems at enterprise scale.</h2>
+          <p>These sanitized cases show the strategic problem, the system-level decision I drove, the measurable outcome, and the capability that remained after launch. Confidential implementation details are intentionally omitted.</p>
+        </div>
+
+        <div class="scope-row" aria-label="Cross-functional operating scope">
+          <strong>Operating scope</strong>
+          <span>Product strategy · Engineering · Data Science · Design · Operations · Business</span>
+        </div>
+
+        <div class="case-stack">
+          <article class="case-card">
+            <div class="case-impact">
+              <span>Outcome</span>
+              <strong>+40% adoption<br>+10% CSAT</strong>
+            </div>
+            <div class="case-content">
+              <h3>0→1 GenAI localization capability</h3>
+              <p>Turned a translation need into an end-to-end multilingual product capability for Walmart's driver ecosystem—measured by comprehension, adoption, and satisfaction rather than output volume.</p>
+              <div class="case-logic">
+                <div><b>Strategic problem</b><p>Generic translation alone could not create a consistent experience across language preferences, content types, and operational contexts.</p></div>
+                <div><b>System decision</b><p>Designed language preference signals, model requirements, prompt and evaluation strategy, quality monitoring, and fallback as one product system.</p></div>
+                <div><b>Broader leverage</b><p>Created a repeatable product pattern for introducing GenAI into additional driver workflows without treating every surface as an isolated feature.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-impact">
+              <span>Outcome</span>
+              <strong>+80% accuracy<br>$100M+ protected</strong>
+            </div>
+            <div class="case-content">
+              <h3>AI-assisted proof-of-delivery quality system</h3>
+              <p>Improved the quality of delivery evidence by joining computer-vision validation with an in-workflow experience that helped drivers correct issues while the outcome was still recoverable.</p>
+              <div class="case-logic">
+                <div><b>Strategic problem</b><p>Detecting poor evidence after delivery completion could explain a defect, but it could not prevent the customer or business impact.</p></div>
+                <div><b>System decision</b><p>Moved validation into the active workflow and paired model output with immediate feedback, correction, and safe fallback behavior.</p></div>
+                <div><b>Broader leverage</b><p>Established a reusable AI-assisted quality pattern in which the model and the user work together to prevent defects—not merely report them.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-impact">
+              <span>Outcome</span>
+              <strong>$58M<br>annual savings</strong>
+            </div>
+            <div class="case-content">
+              <h3>ML decisioning for dynamic last-mile operations</h3>
+              <p>Moved high-scale operational decisions beyond rigid rules toward ML-powered decisioning that could respond to changing marketplace and delivery conditions.</p>
+              <div class="case-logic">
+                <div><b>Strategic problem</b><p>Rules were explainable but brittle; they could not adapt well to dynamic supply, demand, capacity, and field constraints.</p></div>
+                <div><b>System decision</b><p>Defined shared success metrics, fallback behavior, experiment design, phased rollout, and operational monitoring before scaling the model.</p></div>
+                <div><b>Broader leverage</b><p>Created a repeatable operating model for bringing ML into other high-stakes last-mile decisions while preserving resilience and control.</p></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="outcome-row" aria-label="Additional selected outcomes">
+          <div class="outcome-chip"><strong>$33M</strong><span>annual savings from ML arrival staggering</span></div>
+          <div class="outcome-chip"><strong>$25M</strong><span>saved with +6% offer acceptance and -5% abandonment</span></div>
+          <div class="outcome-chip"><strong>+9%</strong><span>fraud detection improvement through identity verification</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles" id="principles" aria-labelledby="principles-title">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-kicker">Product principles</div>
+          <h2 id="principles-title">Three beliefs that shape how I build AI products.</h2>
+        </div>
+        <div class="principle-grid">
+          <article class="principle-card">
+            <div class="principle-mark">“</div>
+            <h3>Design failure behavior before the happy path.</h3>
+            <p>LLMs often fail plausibly. Uncertainty, refusal, and recovery need explicit product behavior, evaluation criteria, and ownership.</p>
+          </article>
+          <article class="principle-card">
+            <div class="principle-mark">“</div>
+            <h3>The right human intervention is a feature—not a fallback.</h3>
+            <p>The goal is not maximum automation. It is placing judgment, review, or escalation exactly where it protects the user and the system.</p>
+          </article>
+          <article class="principle-card">
+            <div class="principle-mark">“</div>
+            <h3>Build to learn what should become product.</h3>
+            <p>Hands-on prototypes expose model limits, UX friction, and hidden assumptions faster than polished strategy documents alone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="thinking-title">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-kicker">Writing & thinking</div>
+          <h2 id="thinking-title">The questions I am working through in public.</h2>
+          <p>My LinkedIn writing connects lessons from enterprise AI product leadership with the details of building an agentic consumer product myself.</p>
+        </div>
+        <div class="thinking-grid">
+          <article class="thinking-card">
+            <div class="small-label">Building with AI</div>
+            <h3>What changes when a PM can ship the first working product?</h3>
+            <p>How AI coding tools compress discovery, prototyping, product judgment, and launch—and where product discipline matters more, not less.</p>
+          </article>
+          <article class="thinking-card">
+            <div class="small-label">Trustworthy AI</div>
+            <h3>Why “often correct” is not a viable trust standard.</h3>
+            <p>Evaluation, confidence calibration, safe failure, and the product choices required when users may act on model output.</p>
+          </article>
+          <article class="thinking-card wide">
+            <div>
+              <h3>Follow the Builder PM journey.</h3>
+              <p>Weekly notes on AI product strategy, agentic workflows, evaluation, and building NouriScan from 0→1.</p>
+            </div>
+            <a class="button" href="https://www.linkedin.com/in/anchal-gupta/" target="_blank" rel="noopener noreferrer">Read on LinkedIn ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="about-title">
+      <div class="shell about-grid">
+        <div class="about-copy">
+          <div class="section-kicker">About</div>
+          <h2 id="about-title">A product leader who stays close to the work.</h2>
+          <p>I am a Staff Product Manager at Walmart, operating at Principal scope across AI/ML product strategy, decisioning systems, and scaled operations. My background spans engineering, analytics, platform thinking, and cross-functional product leadership.</p>
+          <p>NouriScan reflects the way I like to work: start with a specific user problem, build enough to expose the real risks, evaluate rigorously, narrow the trust boundary, and ship a product people can actually use.</p>
+        </div>
+        <aside class="credentials" aria-label="Selected credentials">
+          <div class="credential"><strong>Walmart</strong><span>Staff Product Manager · AI/ML product leadership</span></div>
+          <div class="credential"><strong>NouriScan</strong><span>Independent AI product builder · 0→1 production launch</span></div>
+          <div class="credential"><strong>ADPList</strong><span>100+ product managers mentored</span></div>
+          <div class="credential"><strong>Education</strong><span>MBA, UC Davis · B.Tech, Computer Science</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="shell">
+        <div class="contact-card">
+          <h2 id="contact-title">Building an ambitious AI product? Let's talk.</h2>
+          <p>I am exploring Principal, Staff, and Lead Product roles across AI/ML, GenAI, agentic AI, consumer AI, and growth.</p>
+          <div class="actions">
+            <a class="button button-primary" href="mailto:aanchalbuilds@gmail.com">aanchalbuilds@gmail.com</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/anchal-gupta/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a class="button button-secondary" href="https://nouriscan.app/" target="_blank" rel="noopener noreferrer">NouriScan ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-row">
+      <span>© <span id="year"></span> Aanchal Gupta. Built to show how I think, decide, and ship.</span>
+      <span class="footer-links" aria-label="Footer links">
+        <a href="#top">Back to top</a>
+        <a href="mailto:aanchalbuilds@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/anchal-gupta/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://nouriscan.app/" target="_blank" rel="noopener noreferrer">Try NouriScan ↗</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const copyButton = document.getElementById('copy-code');
+    copyButton.addEventListener('click', async () => {
+      const code = document.getElementById('invite-code').textContent;
+      try {
+        await navigator.clipboard.writeText(code);
+        copyButton.textContent = 'Copied';
+      } catch (error) {
+        copyButton.textContent = code;
+      }
+      window.setTimeout(() => { copyButton.textContent = 'Copy code'; }, 1800);
+    });
+  </script>
+</body>
+</html>
